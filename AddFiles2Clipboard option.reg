@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Menu]
+"MUIVerb"="Copiar lista de archivos"
+"SubCommands"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Menu\shell\CopyFileList]
+"MUIVerb"="Archivos"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Menu\shell\CopyFileList\command]
+@="cmd /c \"cd /d \"%V\" && dir /b /a-d | clip\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Menu\shell\CopyAll]
+"MUIVerb"="Archivos y carpetas"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Menu\shell\CopyAll\command]
+@="cmd /c \"cd /d \"%V\" && dir /b | clip\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Menu\shell\CopyHidden]
+"MUIVerb"="Archivos y carpetas ocultos y visibles"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Menu\shell\CopyHidden\command]
+@="cmd /c \"cd /d \"%V\" && dir /b /a | clip\""
